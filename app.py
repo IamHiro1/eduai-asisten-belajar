@@ -96,4 +96,4 @@ if btn_tanya:
         st.warning("Masukkan topik materi terlebih dahulu ya!")
 
 st.markdown("---")
-st.caption("EduAI Project - Tugas Informatika Kelas 12 | Built with Streamlit & Gemini 2.5 Flash")
+st.caption("EduAI Project")
