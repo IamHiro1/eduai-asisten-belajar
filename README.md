@@ -1,2 +1,2 @@
-# asisten-belajar
+# EduAI: Asisten Belajar
 Web App Asisten Belajar
