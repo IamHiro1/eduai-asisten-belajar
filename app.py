@@ -8,7 +8,6 @@ st.set_page_config(
 )
 
 try:
-    # Ambil API Key dari Streamlit Secrets
     API_KEY = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=API_KEY)
     model = genai.GenerativeModel('gemini-2.5-flash')
