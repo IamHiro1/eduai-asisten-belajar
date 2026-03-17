@@ -78,7 +78,7 @@ def get_ai_response(user_query):
     return response.text
 
 st.markdown('<h1 class="main-title">EduAI</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">Ubah materi sulit jadi analogi yang asyik!</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-title">Ubah materi sulit jadi analogi yang asik!</p>', unsafe_allow_html=True)
 
 with st.container():
     topic = st.text_input("Apa yang ingin kamu pelajari hari ini?", placeholder="Misal: Hukum Termodinamika atau Mitosis")
@@ -96,4 +96,4 @@ if btn_tanya:
         st.warning("Masukkan topik materi terlebih dahulu ya!")
 
 st.markdown("---")
-st.caption("EduAI Project")
+st.caption("EduAI Project | Albertus Kevin Tandiono XII-1/2 & Satrio Wicaksono Agung Wibowo XII-1/33")
