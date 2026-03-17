@@ -13,7 +13,7 @@ try:
     # Ambil API Key dari Streamlit Secrets
     API_KEY = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 except Exception as e:
     st.error("Konfigurasi API Key bermasalah.")
     st.stop()
@@ -30,12 +30,12 @@ st.markdown("""
 # Kode ini memastikan riwayat chat tersimpan selama tab browser tidak direfresh/tutup
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Halo! Aku EduAI. Materi apa yang ingin kamu diskusikan atau buatkan analoginya hari ini?"}
+        {"role": "assistant", "content": "Halo! Aku EduAI. Materi apa yang ingin kamu diskusikan hari ini?"}
     ]
 
 # --- TAMPILAN HEADER ---
-st.title("🤖 EduAI: Smart Tutor")
-st.caption("Asisten belajar dengan analogi cerdas. Riwayat chat ini hanya bisa dilihat olehmu.")
+st.title("🤖 EduAI: Asisten Belajar")
+st.caption("Dibuat oleh Albertus Kevin Tandiono XII-1/2 & Satrio Wicaksono Agung Wibowo XII-1/33")
 
 # --- MENAMPILKAN RIWAYAT CHAT ---
 # Loop untuk menampilkan semua pesan yang tersimpan di session_state
