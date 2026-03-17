@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 st.set_page_config(
-    page_title="EduAI - Chat Belajar Pintar",
+    page_title="EduAI - Asisten Belajar",
     page_icon="🤖",
     layout="centered"
 )
@@ -24,11 +24,11 @@ st.markdown("""
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Halo! Aku EduAI. Materi apa yang ingin kamu diskusikan atau buatkan analoginya hari ini?"}
+        {"role": "assistant", "content": "Halo! Aku EduAI. Materi apa yang ingin kamu diskusikan hari ini?"}
     ]
 
 st.title("🤖 EduAI: Smart Tutor")
-st.caption("Asisten belajar dengan analogi cerdas. Riwayat chat ini hanya bisa dilihat olehmu.")
+st.caption("Dibuat oleh Albertus Kevin Tandiono XII-1/2 & Satrio Wicaksono Agung Wibowo XII-1/33")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
